@@ -78,7 +78,7 @@ const layout = [
                 square.setAttribute('class', "pac-dot") 
             }
             if(el === 2){
-                square.setAttribute('class', "power-pellet")
+                square.setAttribute('class', "ghost lair")
             }
             if(el === 3){
                 square.setAttribute('class', "pacman") 
