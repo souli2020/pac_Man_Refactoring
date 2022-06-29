@@ -70,7 +70,7 @@ const layout = [
         
          grid.appendChild(square)
          
-         //squares.push(square)
+         squares.push(square)
             if(el === 1){
                 square.setAttribute('class', "wall")
             }
