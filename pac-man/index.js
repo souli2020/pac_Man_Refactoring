@@ -102,8 +102,8 @@ squares[pacmanCurrentIndex].setAttribute('class', 'pacman')
 document.addEventListener('keyup', movePacMan)
 function movePacMan(e){
     squares[pacmanCurrentIndex].classList.remove('pacman')
-    //moving the ghosts with the keyup not at the refresh
-    ghosts.forEach(ghost => moveGhosts(ghost))
+    //moving the ghosts from here cause a bug 
+   
     switch(e.key){
         case "ArrowUp" :
             if(!squares[pacmanCurrentIndex -width].classList.contains('ghost-lair') && !squares[pacmanCurrentIndex -width].classList.contains('wall'))
@@ -187,7 +187,7 @@ const ghosts =[
 })
  
 //moving Ghosts 
-
+ ghosts.forEach(ghost => moveGhosts(ghost))
 function moveGhosts(ghost){
    let directions =[-1, +1, -width, +width]
    let direction = directions[Math.floor(Math.random() * directions.length)]
