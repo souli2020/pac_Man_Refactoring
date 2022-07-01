@@ -97,6 +97,7 @@ squares[pacmanCurrentIndex].setAttribute('class', 'pacman')
 
 //moving pacman in the board 
 //https://www.keyCode.info
+//e.keyCode are deprecated
 
 document.addEventListener('keyup', movePacMan)
 function movePacMan(e){
