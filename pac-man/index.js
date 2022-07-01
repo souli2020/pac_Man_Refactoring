@@ -235,7 +235,7 @@ const gameOver= () =>{
     !squares[pacmanCurrentIndex].classList.contains('scared-ghost')){
         ghosts.forEach(ghost => clearInterval(ghost.timerId))
         document.removeEventListener('keyup', movePacMan)
-        scoreDisplay.innerHTML = 'You LOSE'
+        scoreDisplay.textContent = 'You LOSE'
 
     }
      
@@ -246,6 +246,6 @@ function checkForWin() {
         
         ghosts.forEach(ghost => clearInterval(ghost.timerId))
          document.removeEventListener('keyup', control)
-         scoreDisplay.innerHTML = 'You WON!'
+         scoreDisplay.textContent = 'You WON!'
     }
 }
