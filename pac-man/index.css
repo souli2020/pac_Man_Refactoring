@@ -1,6 +1,17 @@
 html, body {
     margin: 10;
-    padding: 10;
+    padding:  0;
+    display: grid;
+     background: pink;
+}
+h3{
+    margin: 0 auto;
+    font-size: 2rem;
+    color: blue;
+
+}
+span{
+    color: black;
 }
 
 .grid {
